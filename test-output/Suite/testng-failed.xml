@@ -3,9 +3,22 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.ecommerce.testcases.LoginWithUsernameAndPassword_002">
+        <methods>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.ecommerce.testcases.LoginWithUsernameAndPassword_002 -->
       <class name="com.ecommerce.testcases.Product_003">
         <methods>
+          <include name="productClick"/>
           <include name="productSearch"/>
+          <include name="displayProduct"/>
+          <include name="tearDown"/>
+          <include name="homePage"/>
+          <include name="comparision"/>
+          <include name="productAddToCart"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.ecommerce.testcases.Product_003 -->

@@ -12,6 +12,7 @@ public class Product_003 extends BaseClass_001 {
 	public void productSearch() throws Exception {
 
 		pp.searchProduct(productName);
+		logger.info("Producted has been searched.............");
 
 	}
 
@@ -19,6 +20,7 @@ public class Product_003 extends BaseClass_001 {
 	public void productClick() throws Exception {
 
 		pp.clickProduct();
+		logger.info("Producted has been clicked.............");
 
 	}
 
@@ -26,21 +28,25 @@ public class Product_003 extends BaseClass_001 {
 	public void productAddToCart() throws Exception {
 
 		pp.addToCart();
+		logger.info("Have added the product to the cart.............");
 
 	}
 	@Test(priority = 4)
 	public void homePage() throws InterruptedException {
 		pp.backToHome();
+		logger.info("Returned to home page.............");
 		
 	}
 	
 	@Test(priority = 5)
 	public void displayProduct() throws InterruptedException {
 		pp.productDisplayes();
+		logger.info("Product displays.............");
 	}
 
 	@Test(priority = 6)
 	public void comparision() throws InterruptedException {
 		pp.sameProductAdded();
+		logger.info("Confirmed that right product added.............");
 	}
 }

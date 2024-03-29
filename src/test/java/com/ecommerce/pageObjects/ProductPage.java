@@ -15,7 +15,7 @@ public class ProductPage extends BaseClass_001 {
 		WebElement productSearch = driver.findElement(By.id("twotabsearchtextbox"));
 		productSearch.sendKeys(productName);
 		productSearch.sendKeys(Keys.ENTER);
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 	}
 
@@ -25,11 +25,11 @@ public class ProductPage extends BaseClass_001 {
 		realme.click();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 
 		js.executeScript("window.scrollBy(0,500)");
 
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 	}
 
@@ -50,7 +50,7 @@ public class ProductPage extends BaseClass_001 {
 
 		Thread.sleep(2000);
 		js.executeScript("window.scrollBy(0, -1500)");
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		WebElement logo = driver.findElement(By.xpath("//a[@id='nav-logo-sprites']"));
 		Thread.sleep(3000);
