@@ -12,7 +12,7 @@ public class Product_003 extends BaseClass_001 {
 	public void productSearch() throws Exception {
 
 		pp.searchProduct(productName);
-		logger.info("Producted has been searched.............");
+		logger.info("Product has been searched.............");
 
 	}
 
@@ -20,7 +20,7 @@ public class Product_003 extends BaseClass_001 {
 	public void productClick() throws Exception {
 
 		pp.clickProduct();
-		logger.info("Producted has been clicked.............");
+		logger.info("Product has been clicked.............");
 
 	}
 
